@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Başvuru</title>
+
+        <style>
+body{
+background-color: antiquewhite;
+
+
+}
+
+        </style>
+    </head>
+    <body>
+        <h1 style="color: orange">Özgüleşir Yazılım A.Ş. Başvuru Formu</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <fieldset style="color: brown">
+                <legend>Kullanıcı Bilgileri</legend>
+                <table style="color: brown" >
+                    
+                    <tr>
+                        <td>İsim</td>
+                        <td>
+                            <input type="text" name="isim" id="isim" placeholder="İsminizi Yazınız">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soyisim</td>
+                        <td>
+                            <input type="text" name="soyisim" id="soyisim" placeholder="Soyisminizi giriniz" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Yaş</td>
+                        <td>
+                            <input type="number" min="20" max="50"
+                            step="1" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mail</td>
+                        <td>
+                            <input type="email" id="eposta" name="eposta">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fotoğraf Ekle</td>
+                        <td>
+                            <input type="file" id="dosya" name="dosya">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ürün Şifresi (6 haneli)</td>
+                        <td>
+                            <input type="password" id="sifre" name="sifre" required maxlength="6">
+                        </td>
+                    </tr>
+                </table>
+              
+            </fieldset>
+            <fieldset style="color: brown">
+                <legend>
+                    <table style="color: brown">
+                        <tr>
+                            <th colspan="2"> Buradaki alanlar mesleki deneyimi kapsar</th>
+                        </tr>
+                        <tr>
+                            <td>Sektöre giriş tarihi</td>
+                            <td>
+                                <input type="date" id="tarih" name="tarih" value="2016-15-15">
+                            </td>
+                        </tr>
+                      
+                        <tr>
+                           
+                        
+                    </tr>
+                    <br>
+                    <br>
+                    <tr>
+                            <td align="bottom">Programlama Dilleri</td> 
+                         
+                            <td>
+                               
+                               <br> 
+                               <br> 
+                               <br>
+                               <br>
+                               <fieldset>
+                               <select size="6" multiple name="pdil" id="pdil" >
+                                    <option value="1">PHP</option>
+                                    <option value="2">C#</option>
+                                    <option value="3">Pyhton</option>
+                                    <option value="4">JavaScript</option>
+                                    <option value="5">Java</option>
+                                    <option value="6">Pascal</option>
+                                    <option value="7" selected>HTML</option>
+                                </select>
+                                <input type="submit" name="Ekle" id="ekle-1" value="Ekle">
+                            </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                         </td>
+                        
+                    </tr>
+                    </table>
+                </legend>
+            </fieldset>
+            <fieldset>
+            <legend>Bildiğiniz Yabancı Diller</legend>
+            <input type="checkbox"> İngilizce <br />
+            <input type="checkbox"> Almanca <br />
+            <input type="checkbox"> Arapça
+            <br><input type="checkbox">
+             Çince
+             <br><input type="checkbox"> İspanyolca
+            </fieldset>
+
+          
+            <fieldset>
+                <legend style="color: brown">En sevdiğiniz aktivite</legend>
+                <select name="checkbox" multiple>
+                    <option selected="2" value="none">Hiçbiri</option>
+                    <optgroup label="Spor">
+                      <option value="c1">Basketbol</option>
+                      <option value="c2">Futbol</option>
+                      <option value="c3">Tenis</option>
+                    </optgroup>
+                    <optgroup label="Ev İşleri">
+                      <option value="y1">Yemek Yapmak</option>
+                      <option value="y2">Temizlik</option>
+                      <option value="y3">Dekorasyon</option>
+                    </optgroup>
+                    <optgroup label="Diğer">
+                      <option value="t1">Bilgisayarda oyun oynamak</option>
+                      <option value="t2">Kitap Okumak</option>
+                      <option value="t3">Evcil hayvanını gezdirmek</option>
+                    </optgroup>
+                  </select>
+                  <input type="submit" name="Ekle" id="ekle-1" value="Ekle">
+            </fieldset>
+            <br>
+        <input 
+        type="checkbox"
+         name="cinsiyet" 
+         id="Man" 
+         value="Man">
+       <label 
+        class="Man"
+       for="Man"> Man
+       <input 
+       type="checkbox" 
+       name="cinsiyet"
+        id="Woman" 
+        value="woman"> 
+       <label 
+       class="woman"
+       for="Woman">Woman
+       <br>
+        <input type="submit" value="Gönder">
+    
+            <input type="submit">
+            <input type="reset" name="" id="yenile">
+        </form>
+    </body>
+</html>
